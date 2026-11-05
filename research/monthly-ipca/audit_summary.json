@@ -1,0 +1,23 @@
+{
+  "candidate_checks": 168,
+  "documented": 84,
+  "first_publication_certified": false,
+  "hashes_verified": true,
+  "immutable_vintages_certified": false,
+  "lag_availability": {
+    "previous_calendar_month_available_before_cutoff": 0,
+    "previous_year_available_before_cutoff": 12
+  },
+  "max_difference_pp": "0.00",
+  "rows": 84,
+  "scope": "share-safe table consistency; underlying news/PDF provenance not reverified",
+  "stronger": 83,
+  "train": 72,
+  "train_documented": 72,
+  "train_stronger": 71,
+  "training_ready": false,
+  "unresolved": [
+    "2013-07"
+  ],
+  "warmup": 12
+}

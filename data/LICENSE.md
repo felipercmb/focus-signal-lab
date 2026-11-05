@@ -25,3 +25,6 @@ models, or conclusions.
 The repository's MIT license applies to its software. It does not replace the
 license of the BCB databases or their derivatives. See the
 [data card](../docs/DATA_CARD.md) for definitions, provenance, and limitations.
+
+This notice covers BCB-derived data. The monthly-IPCA research includes other
+source facts with [separate attribution and terms](../research/monthly-ipca/LICENSE.md).

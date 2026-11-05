@@ -30,6 +30,7 @@ jobs:
           ruff format --check .
           pytest -q
           focus-lab check-data
+          python -m focus_signal.monthly_audit research/monthly-ipca
       - name: Reproduce benchmark from committed snapshot
         run: |
           focus-lab run --output /tmp/focus-reproduced

@@ -13,6 +13,20 @@ The economic motivation is to investigate signals useful for monitoring changes
 in the inflation outlook. The engineering goal is an experiment another developer
 can inspect, test and reproduce without credentials or live API access.
 
+## Research update: monthly realized IPCA
+
+The [monthly-IPCA research audit](research/monthly-ipca/README.md) adds a separate
+question: can a correction based on already observed errors improve the Focus
+median for the next month's realized inflation? Its current deliverable is a
+publication-calendar reconstruction: **84 origins, 168 candidate-value checks,
+and 71 of 72 proposed training origins with stronger calendar support**.
+July 2013 remains unresolved. No model has been trained for that track.
+
+The results below continue to describe the original **weekly change in rolling
+12-month expectations**. The monthly research has its own target, proposed split,
+data-quality gates and offline validator; its extraction checks are not model
+performance metrics.
+
 ## What the experiment found
 
 The Ridge model with Focus and macro features won validation and achieved
@@ -127,6 +141,8 @@ CI runs linting, formatting, unit tests, snapshot verification and a complete
 offline benchmark reproduction on Python 3.12. Tests cover future-data
 perturbation, calendar gaps, stale observations, target maturity, train-only
 scaling, validation-only selection, tampering and matched uncertainty samples.
+CI also checks the new monthly research export's dates, hashes, candidate values
+and unresolved training gates.
 
 ```bash
 ruff check .

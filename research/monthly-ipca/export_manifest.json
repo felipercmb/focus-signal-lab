@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "source_project": "diagnostico-focus/reconstruction",
+  "source_audit_revision": "0.3.4-audit-addendum",
+  "source_receipt_time_utc": "2026-11-05T12:31:45.506709+00:00",
+  "source_receipt_note": "Historical local receipt; the public validator checks exported-table consistency. It does not rerun the full local source reconstruction.",
+  "input_files": [
+    {
+      "path": "origin_reconstruction.csv",
+      "sha256": "267defd58f796a13bed5f1bd982311a3f855b7c45e43cadaf792f625ca1a0c6f",
+      "omitted_columns": [
+        "evidence_files_json"
+      ]
+    },
+    {
+      "path": "pdf_values_verified.csv",
+      "sha256": "e03dff39d1d13b4dbb7b252945cc08cd53045095affe7e87c6f2c323964659e1",
+      "omitted_columns": [
+        "visual_evidence_image"
+      ]
+    },
+    {
+      "path": "followup_2012/ipca_release_dates.csv",
+      "sha256": "9829c926587859581f85366f304468f665ba54487f4d892fe33ba23e158e8abe",
+      "omitted_columns": [
+        "date_evidence_file",
+        "news_html_capture"
+      ]
+    },
+    {
+      "path": "followup_2012/lag_availability.csv",
+      "sha256": "c752807cded9aea49faf56fab7991a59ccf2620fd50ff25141baa06ecd6b1e0c",
+      "omitted_columns": []
+    },
+    {
+      "path": "reconstruction_contract.json",
+      "sha256": "b5e43d8ce4f6d3aa4caf4d10d165ad2ad08fb0b7d01c889e872bc05695076c28"
+    },
+    {
+      "path": "verification.json",
+      "sha256": "67f41f806e29c47cdbff92adaf9bcdf1b22b30ebd0d341022e7a93a408065adb"
+    },
+    {
+      "path": "followup_rules.py",
+      "sha256": "cfbdde9b9fff0f625edf5bf7b612f448113e0f01bd910515966aacca82ef8e0d"
+    }
+  ],
+  "files": [
+    {
+      "path": "origins.csv",
+      "sha256": "5a2d9418f975c30c1f63926c5968fccc9dad9b8b7a593acec39c473567ce8afa"
+    },
+    {
+      "path": "candidate_pdf_checks.csv",
+      "sha256": "7dbf17d5d60e128cb3d5044d54523b65bbf22925e76a55cb49a02612119636a5"
+    },
+    {
+      "path": "ipca_release_dates.csv",
+      "sha256": "4e033cf51a37485e33df518e213cb011175f070ec480cad7c34a14a11fac9b59"
+    },
+    {
+      "path": "lag_availability.csv",
+      "sha256": "3f0e057536ad2da18e2a37f6c546be538fb5c5ef089100c0f1644e2121c188fe"
+    }
+  ],
+  "excluded_material": [
+    "Full news captures and search extracts",
+    "PDFs and review images",
+    "Private filesystem paths and links to omitted local evidence files"
+  ]
+}
