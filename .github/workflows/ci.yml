@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      MPLBACKEND: Agg
+      MPLCONFIGDIR: /tmp/matplotlib
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.lock
+      - name: Install locked dependencies
+        run: |
+          python -m pip install -r requirements.lock
+          python -m pip install --no-deps --no-build-isolation -e .
+      - name: Lint and test without API access
+        run: |
+          ruff check .
+          ruff format --check .
+          pytest -q
+          focus-lab check-data
+      - name: Reproduce benchmark from committed snapshot
+        run: |
+          focus-lab run --output /tmp/focus-reproduced
+          python scripts/verify_reproduction.py reports/benchmark /tmp/focus-reproduced

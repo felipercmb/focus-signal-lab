@@ -1,0 +1,77 @@
+{
+  "selection": {
+    "selected_model": "ridge_macro",
+    "selection_metric": "validation MAE (percentage points)",
+    "validation_mae_pp": 0.15745777346998824,
+    "validation_start": "2018-01-01",
+    "validation_end": "2020-12-31",
+    "test_start": "2021-01-01",
+    "test_end": "2025-12-31",
+    "refit_weeks": 13,
+    "min_train": 100,
+    "training_rule": "target_date < refit_date",
+    "candidate_order": [
+      "persistence",
+      "ridge_focus",
+      "ridge_macro",
+      "random_forest"
+    ]
+  },
+  "feature_settings": {
+    "lag_days": 7,
+    "horizon_weeks": 4
+  },
+  "snapshot_manifest_sha256": "2601c4b40b296c1a59f28095d538ee8122692af0aa3294c492a1af7d339748e8",
+  "python": "3.12.13",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "data_quality": {
+    "weekly_rows": 834,
+    "rows_with_complete_features_and_target": 817,
+    "first_origin": "2010-01-15",
+    "last_origin": "2026-01-02"
+  },
+  "paired_mae_difference_intervals": [
+    {
+      "model": "persistence",
+      "mae_difference_pp": 0.0,
+      "approximate_95pct_lower_pp": 0.0,
+      "approximate_95pct_upper_pp": 0.0,
+      "block_weeks": 13,
+      "repetitions": 2000,
+      "seed": 42
+    },
+    {
+      "model": "random_forest",
+      "mae_difference_pp": -0.01085875085741254,
+      "approximate_95pct_lower_pp": -0.023583316384462375,
+      "approximate_95pct_upper_pp": 0.003689571936852349,
+      "block_weeks": 13,
+      "repetitions": 2000,
+      "seed": 42
+    },
+    {
+      "model": "ridge_focus",
+      "mae_difference_pp": -0.0016084818425236096,
+      "approximate_95pct_lower_pp": -0.010468975074083064,
+      "approximate_95pct_upper_pp": 0.007376073589174852,
+      "block_weeks": 13,
+      "repetitions": 2000,
+      "seed": 42
+    },
+    {
+      "model": "ridge_macro",
+      "mae_difference_pp": -0.009153703834714045,
+      "approximate_95pct_lower_pp": -0.019189124938081333,
+      "approximate_95pct_upper_pp": 0.0013190542943137468,
+      "block_weeks": 13,
+      "repetitions": 2000,
+      "seed": 42
+    }
+  ],
+  "interval_note": "Approximate paired moving-block bootstrap; model MAE minus persistence MAE. Negative favors model. Conditional on fitted path; no multiplicity adjustment or guarantee."
+}

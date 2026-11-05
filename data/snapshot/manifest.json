@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "retrieved_at_utc": "2026-11-05T11:25:38.469561+00:00",
+  "requested_start": "2010-01-01",
+  "requested_end": "2025-12-31",
+  "publisher": "Banco Central do Brasil",
+  "data_license": "ODbL-1.0",
+  "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "sources": {
+    "focus": "https://dadosabertos.bcb.gov.br/dataset/expectativas-mercado",
+    "selic": "https://dadosabertos.bcb.gov.br/dataset/432-taxa-de-juros---meta-selic-definida-pelo-copom",
+    "fx": "https://dadosabertos.bcb.gov.br/dataset/1-taxa-de-cambio---livre---dolar-americano-venda---diario"
+  },
+  "requests": [
+    {
+      "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoInflacao12Meses?$format=json&$top=10000&$skip=0&$filter=Indicador%20eq%20%27IPCA%27%20and%20baseCalculo%20eq%200%20and%20Suavizada%20eq%20%27S%27%20and%20Data%20ge%20%272010-01-01%27%20and%20Data%20le%20%272025-12-31%27&$orderby=Data%20asc",
+      "file": "raw/focus_000.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2010&dataFinal=31%2F12%2F2010",
+      "file": "raw/selic_2010.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2011&dataFinal=31%2F12%2F2011",
+      "file": "raw/selic_2011.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2012&dataFinal=31%2F12%2F2012",
+      "file": "raw/selic_2012.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2013&dataFinal=31%2F12%2F2013",
+      "file": "raw/selic_2013.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2014&dataFinal=31%2F12%2F2014",
+      "file": "raw/selic_2014.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2015&dataFinal=31%2F12%2F2015",
+      "file": "raw/selic_2015.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2016&dataFinal=31%2F12%2F2016",
+      "file": "raw/selic_2016.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2017&dataFinal=31%2F12%2F2017",
+      "file": "raw/selic_2017.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2018&dataFinal=31%2F12%2F2018",
+      "file": "raw/selic_2018.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2019&dataFinal=31%2F12%2F2019",
+      "file": "raw/selic_2019.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2020&dataFinal=31%2F12%2F2020",
+      "file": "raw/selic_2020.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2021&dataFinal=31%2F12%2F2021",
+      "file": "raw/selic_2021.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2022&dataFinal=31%2F12%2F2022",
+      "file": "raw/selic_2022.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2023&dataFinal=31%2F12%2F2023",
+      "file": "raw/selic_2023.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2024&dataFinal=31%2F12%2F2024",
+      "file": "raw/selic_2024.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01%2F01%2F2025&dataFinal=31%2F12%2F2025",
+      "file": "raw/selic_2025.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2010&dataFinal=31%2F12%2F2010",
+      "file": "raw/fx_2010.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2011&dataFinal=31%2F12%2F2011",
+      "file": "raw/fx_2011.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2012&dataFinal=31%2F12%2F2012",
+      "file": "raw/fx_2012.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2013&dataFinal=31%2F12%2F2013",
+      "file": "raw/fx_2013.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2014&dataFinal=31%2F12%2F2014",
+      "file": "raw/fx_2014.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2015&dataFinal=31%2F12%2F2015",
+      "file": "raw/fx_2015.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2016&dataFinal=31%2F12%2F2016",
+      "file": "raw/fx_2016.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2017&dataFinal=31%2F12%2F2017",
+      "file": "raw/fx_2017.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2018&dataFinal=31%2F12%2F2018",
+      "file": "raw/fx_2018.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2019&dataFinal=31%2F12%2F2019",
+      "file": "raw/fx_2019.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2020&dataFinal=31%2F12%2F2020",
+      "file": "raw/fx_2020.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2021&dataFinal=31%2F12%2F2021",
+      "file": "raw/fx_2021.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2022&dataFinal=31%2F12%2F2022",
+      "file": "raw/fx_2022.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2023&dataFinal=31%2F12%2F2023",
+      "file": "raw/fx_2023.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2024&dataFinal=31%2F12%2F2024",
+      "file": "raw/fx_2024.json"
+    },
+    {
+      "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01%2F01%2F2025&dataFinal=31%2F12%2F2025",
+      "file": "raw/fx_2025.json"
+    }
+  ],
+  "files": {
+    "raw/focus_000.json": "8cb63a15cff976b8ca735579ae4ea6063fce3b088ec352c3fad5aaf99887c44c",
+    "raw/selic_2010.json": "65fb3d24f8dca9e50a433bbbc3858fa78a7619fbeee6eac44912a4e18c8ff487",
+    "raw/selic_2011.json": "ca261c6e63e0ab83cbdd67dffb2dea13d26c8cdc89cca11b1782e2aee46cd4b9",
+    "raw/selic_2012.json": "f962a48602f367105aece2a7940406f57a5e83f59d26d923a9c41a68a95eeda4",
+    "raw/selic_2013.json": "8204deecd1d6648d276801a830910ccd91ab4ef125c1e78f7d3cd3798f4c64ea",
+    "raw/selic_2014.json": "8e27d047bc0725ba63875442ff2fce5f718a62d8cf58d0f0bbe4a75e5a07c448",
+    "raw/selic_2015.json": "37f98777e2f1abb2921f157736016b51d764e08f674c9631492bad230f23c478",
+    "raw/selic_2016.json": "98c1f0e452f8203eef103ed3a4a72c1e66bea14036fe412ab1e2e7c20241fb52",
+    "raw/selic_2017.json": "737e3582c37c625fe1081ede678d00244ae39cb3fdaecdd22d3df78892a97464",
+    "raw/selic_2018.json": "d6c6e41b5396fa4d8adcdb6c7cd59c47aed31959a825258a0a43bf23204ea8f9",
+    "raw/selic_2019.json": "20fd9a889c0efc70354c94dddffea1a1302eaa6a88bba131414dad298d453a8d",
+    "raw/selic_2020.json": "c27efd3cf15086ffd9f203728aefb1d61822c2e048be9468cc3c6df5ccd89b6e",
+    "raw/selic_2021.json": "29a09d2688f8ff66f82689e10f50fcd4b350766b2c3bdbaaaa837b3d7811b3b2",
+    "raw/selic_2022.json": "8f4f40019b737ab3f58d2f8e13d5487575d9bd625a0bf8700719c14abea9cc04",
+    "raw/selic_2023.json": "8bb8f1a3e6613ce242453129fb367235b994eccc5e58baec3708c0e80d8aa9fe",
+    "raw/selic_2024.json": "0392cbc190e3cef9b058260617b5ffeb6c7a7ec3b004bade33dc138062c448d5",
+    "raw/selic_2025.json": "9a5bf16530aa431bcb0f6bacf086cce487644607dea8ea14b5fcf59b9ba3eaac",
+    "raw/fx_2010.json": "091376117bd0cf6765c4d0454ed088b7d7e77605c0e9f1c4d353024569c619c2",
+    "raw/fx_2011.json": "a577e96e8e5003584359ba4e8e6a49055e70fbc6d01ff40fd905127c87df1292",
+    "raw/fx_2012.json": "69c7cdcf9e5ebb59d6db986332c18ed236a68904b2bc6671b751969a3412c6b9",
+    "raw/fx_2013.json": "dce610136c5200fa6f94300f084fb558999befcebb78fc75067275ea72bbebcc",
+    "raw/fx_2014.json": "5b56a816c7a7f17dbc5d16591dd87b86c7e5cffc0d34cc07a3cb9932b4576b2e",
+    "raw/fx_2015.json": "57f499d88f962f58eeb984fa0231db3f260cd04647ffb7cbd744292c8a3218ec",
+    "raw/fx_2016.json": "f9516a0be09bb9b860f43d1bfa2f17921c17d7e216871f2b47fe96811fc43693",
+    "raw/fx_2017.json": "9841c76d52b442c3aea2aa9a46753e2d72bfebff653b90b710a269a7a3e2101c",
+    "raw/fx_2018.json": "99afa8387193c9fa88f7bf537045fb754bb083ee5e40753535e327ec517b850f",
+    "raw/fx_2019.json": "3bb453067f6995c70d27850be1b04c4e6458457500a43e40931e42cd091fa609",
+    "raw/fx_2020.json": "8ae655214093cace877b6c031a9054771d116f42b288ea858e18991e31622101",
+    "raw/fx_2021.json": "3504a59d2d830bf90b117369642d352bebbfa3327783ed12826322c7c9a19de0",
+    "raw/fx_2022.json": "bc730dda26778ad8c0f0500ab8c13ecc9daded0db0e206717900ae3bd9dfdbe3",
+    "raw/fx_2023.json": "45a23cb5fd3c5e1cef456c06a522c14329d74c04fd88e545fd7c4eac062ef96f",
+    "raw/fx_2024.json": "6d604412ba2f95fc93463b3f35dd24e8cd020ba1e2db08502b22d90d751e164a",
+    "raw/fx_2025.json": "b785dec8c762496b6351ab6e72a42d6ea7ba8b47b8fbe94ad98242f4c352fcd9",
+    "focus.csv": "7730e14e527b8b8af2d3aaae53f4c00e1972a822b961206e6ed7ad87b7d5633e",
+    "selic.csv": "b7dfcd47b9c9c5eb2cc828ae9570e7608f1cfd663784d4798545f2c36a99ff14",
+    "fx.csv": "a80e0adf66d5c3616eae10c3f5b33a337f1751bdcffcb27fbf3d8434f2ecd1ff"
+  },
+  "series": {
+    "focus": {
+      "rows": 4019,
+      "first_date": "2010-01-04",
+      "last_date": "2025-12-31",
+      "missing_values": 0
+    },
+    "selic": {
+      "rows": 5844,
+      "first_date": "2010-01-01",
+      "last_date": "2025-12-31",
+      "missing_values": 0
+    },
+    "fx": {
+      "rows": 4019,
+      "first_date": "2010-01-04",
+      "last_date": "2025-12-31",
+      "missing_values": 0
+    }
+  },
+  "vintage_warning": "Current API archive; not immutable as-published vintages."
+}
